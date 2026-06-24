@@ -1,0 +1,12 @@
+Check,Result,Action Taken,Status
+Duplicate Records,0 duplicates,No action needed,✅ PASS
+Null Values — phone,"13,036 (12.7%)",Excluded from analysis — not used,✅ PASS
+Null Values — typeDesc / deficiencyDesc,"37,559 (36.5%)",Expected — Pass inspections have no violations,📋 NOTE
+Null Values — severity,"42,076 (40.9%)",Expected — nulls = clean inspections. Risk score = 0 for these records,📋 NOTE
+Null Values — OutcomeDate / OutcomeDesc / amountFined,~99.8% null,Expected — enforcement actions are rare. Fine analysis uses 182 non-null records only,📋 NOTE
+Invalid Dates,0 invalid dates,No action needed,✅ PASS
+Future Dates,0 future dates,No action needed,✅ PASS
+Unexpected Category Values,None found,No action needed,✅ PASS
+Coordinate Validation,"0 null, 0 invalid",No action needed — all within Toronto bounds,✅ PASS
+Negative Fine Amounts,0 negative values,No action needed,✅ PASS
+Establishment ID vs Name Mismatch,"3,698 difference",Use estId for all grouping — not estName,📋 NOTE
